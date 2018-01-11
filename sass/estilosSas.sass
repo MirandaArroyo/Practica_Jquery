@@ -1,8 +1,11 @@
-$primary-color: BurlyWood
-$secundary-color: Bisque
+$primary-color: #A6ED8E //#CA82F8
+$secundary-color: #28CC9E //#ED93CB
 @font-face
     font-family: fuente 
-    src: url("../tipografias/Typoster ROCK-ON Demo.otf")
+    src: url("../tipografias/ChildsWish.ttf")
+@font-face
+    font-family: fuente2
+    src: url("../tipografias/Toy Train.ttf")
     
 $borde-gris: 1px solid grey
 
@@ -15,35 +18,22 @@ header
     height: 200px
     
 .fondoCabecera
-    background-image: url(../imagenes/portada/portada3.jpg)
+    background-image: url(../imagenes/bosque.png)
     height: 200px
     width: 940px
     font-size: 300px
     
-.logo
+.fondoCabecera h2
     float: left
-    width: 300px
-    height: 200px
-    
-.logo img
-    float: left
+    font-family: fuente
+    font-size: 20%
+    margin-left: 50px
+    color: $primary-color
     
 .fondoCab
     height: 100px
     width: 620px
     
-.inicioSesion
-    float: left
-    font-size: 15px
-    margin-top: 65px
-    margin-left: -40px
-    background-color: white
-    color: black
-/*-----------buscador--------------*/
-
-.buscador
-    height: 30px
-    width: 460px
     
 /*--------menu horizontal(nav)----------*/
 
@@ -63,6 +53,7 @@ header
     list-style-type: none
     margin: 0px
     
+    
 .menu li a
     height: 50px
     text-align: center
@@ -73,84 +64,59 @@ header
     font-family: fuente
     font-size: 30px
     
-.menu li :hover
-    border-top: 4px solid #704010
+.opcion :hover
+    border-top: 4px solid $secundary-color
+    
 
-/*----------menu Vertical----------*/
-.menuLateral
-    float: left
-    height: 400px
-    width: 220px
-    
-.titulo
-    height: 35px
-    width: 220px
-    background-color: $secundary-color
-    text-align: center
-    font-family: fuente
-    font-size: 25px
-    
-.vertical
-    float: left
-    list-style-type: none
-    margin: 0px
-    padding: 0px
-    width: 300px
-    height: 250px
-    font-size: 10px
-    background-color: $secundary-color
-    
-.banner
-    width: 300px
-    height: 250px
 /*--------------body---------------*/
-.img1
-    width: 940px
-    height: 400px
-#contenedor
-    height: 300px
-    text-align: center
+.instrucciones
+    height: 100px
+    border: 7px solid $secundary-color
+    background-color: $primary-color
+    
+#mensaje
+    height: 20px
+    border: 1px solid black
+    
+.contenedor
+    height: 550px
     display: table
     margin: 0 auto
     
     
-.caja2
+.caja
     float: left
-    height: 350px
-    width: 591px
+    height: 600px
+    width: 900px
     margin: 8px
     border: 7px solid $primary-color
     
-video
+.figuras
     float: left
-    height: 350px
-    width: 591px
-    bacground-color: black
-
-#contenedor .caja
-    float: left
-    height: 300px
-    width: 280px
+    height: 570px
+    width: 420px
     margin: 8px
-    border: 7px solid $primary-color
+    /*border: 7px solid $primary-color*/
+    
+#figura
+    position: relative
+    height: 120px
+    width: 120px
+    margin: 15px
+    cursor: pointer
+    /*border: 2px solid $primary-color*/
+    
+#figuraOscura
+    position: relative
+    height: 120px
+    width: 120px
+    margin: 15px
+    
+    
+#colorTriangulo, #colorEstrella, #colorCuadrado, #colorCirculo
+    background-color: grey
 
-.imgSequia2
-    height: 350px
-    width: 591px
 
-.imgSequia
-    height: 300px
-    width: 280px
-    
-    
-.imagenfooter
-    height: 200px
-    width: 940px
-    
-.dibujo
-    text-aling: center
-    height: 200px
-    width: 550px
 /*--------------pie----------------*/
 
 .pie
@@ -178,7 +144,3 @@ p
     font-size: 25px
     margin-top: 20px
     font-family: fuente
-    
-h1
-    font-family: fuente
-    font-size: 100px

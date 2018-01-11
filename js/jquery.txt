@@ -1,0 +1,33 @@
+$(document).ready(function(){
+    //con draggable indicamos que el objeto que hemos recogido en $() es posible cogerlo y arrastrarlo.
+    //la funcion recert hace que cuando arrastremos una figura y la soltemos, vuelva a su posicion original, de este modo si encajan una pieza donde no es, volvera a su posicion original
+    $('#estrella').draggable({revert:"invalid"});
+    $('#triangulo').draggable({revert:"invalid"});
+    $('#cuadrado').draggable({revert:"invalid"});
+    $('#circulo').draggable({revert:"invalid"});
+    
+    //con droppable indicamos el conteneddor en el cual se pueden soltar los elementos draggable, con accept indicamos que elementos queremos que encajen dentro, de ese modo no se podran soltar elementos que no deseemos.
+    //con drop indicamos que queremos que algo ocurra al soltar la figura en su hueco, en este caso queremos que cambie de color asi que llamamos a function e indicamos que el contenedor 'figuraOscura' que esta en color gris, tiene que cambiar de color.
+    $('#estrellaOscura').droppable({
+       accept: '#estrella',
+       tolerance: 'fit',
+       drop: function( event, ui ) {
+           $('#figuraOscura').css("background-color", "yellow");
+       }
+    });
+    $('#trianguloOscuro').droppable({
+       accept: '#triangulo',
+        drop: function( event, ui ) {
+            $('#figuraOscura').css("background-color", "#6088BB");
+        }
+        
+    });
+    
+    $('#cuadradoOscuro').droppable({
+       accept: '#cuadrado'
+    });
+    $('#circuloOscuro').droppable({
+       accept: '#circulo'
+    });
+    
+});

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>DroughtinSpain</title>
+        <title>El bosque animado</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/text.css" />
         <link rel="stylesheet" href="css/960.css" />
-        <!--<link rel="stylesheet" href="css/demo.css" />-->
         <link rel="stylesheet" href="css/estilosSas.css" />
-        
+        <script type='text/javascript' src="js/jquery-3.2.1.js"></script>
+        <script type='text/javascript' src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type='text/javascript' src='js/script.js'></script>
     </head>
     <body>
         <main class="container_12">
             <header class= "grid_12">
                 <div class="grid_8 alpha">
                    <div class="fondoCabecera">
-                       <div class="logo">
-                            <img src="imagenes/logo.png"/>
-                       </div>
+                       <h2>El bosque<br> animado</h2>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -27,50 +26,64 @@
                 <div class="espacioMenu">
                     <div class="menu">
                         <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="index.html">Imagenes</a></li>
-                          <li><a href="videos.html">Videos</a></li>
-                          <li><a href="">Colabora</a></li>
-                          <li><a href="">Contacto</a></li>
+                          <li><a></a></li>
+                            <li><a></a></li>
+                            <li class="opcion"><a href="">Reintentar</a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="clear"></div>
             </nav>
             <div class="clear"></div>
-            <div class="grid_6 ">
-                <!--buscador -->
-                <div class="buscador alpha">
-                    <br>
-                   <audio controls autoplay>
-                        <source src="audio/CreativeCommonsSong.ogg" type="audio/ogg">
-                        <source src="audio/CreativeCommonsSong.mp3" type="audio/mpeg">
-                        <source src="audio/CreativeCommonsSong.aac" type="audio/wav">
-                    </audio>
-                </div>
-            </div>
-            <div class="clear"></div>
             <br>
             <!--<section class ="grid_12">-->
-                <section class="grid_4">
-                <div class="menuLateral">
-                    <div class="vertical">
-                        <iframe class="banner" src="banner/publicado/index.html"></iframe>
-                </div>
-                </div>
-                </section>
-                <section class="grid_8 alpha">
-                    <div id="contenedor">
-                        <article class="grid_3 alpha caja">
-                            <img class="imgSequia" src="imagenes/Desierto.jpg" alt=""/>
-                        </article>
-                        <article class="grid_3 omega caja">
-                           <img class="imgSequia" src="imagenes/Sequia1.jpg" alt=""/>
-                        </article>
-                        <div class="clear"></div>
-                        <article class="caja2">
-                        <img class="imgSequia2" src="imagenes/Sequia2.jpg" alt=""/>
-                    </article>
+                
+                <section class="grid_12">
+                    <div class="instrucciones">
+                            <p id="p">Arrastra las <b><u>figuras de color</u></b> hacia sus casillas correspondientes en <b><u>gris</u></b></p>
+                    </div>
+                    <div class="contenedor">
+                        <div class="caja">
+                            <section class="figuras">
+                                <audio id="player" src="audio/bites-ta-da-winner.mp3"> </audio>
+                                <article id="figuraOscura">
+                                    <div id="colorEstrella">
+                                        <img id="estrellaOscura" src="imagenes/estrellaOscura.png">
+                                    </div>
+                                </article>
+                                <article id="figuraOscura">
+                                    <div id="colorTriangulo">
+                                        <img id="trianguloOscuro" src="imagenes/trianguloOscuro.png">
+                                    </div>
+                                </article>
+                                <article id="figuraOscura">
+                                    <div id="colorCirculo">
+                                        <img id="circuloOscuro" src="imagenes/circuloOscuro.png">
+                                    </div>
+                                </article>
+                                <article id="figuraOscura">
+                                    <div id="colorCuadrado">
+                                        <img id="cuadradoOscuro" src="imagenes/cuadradoOscuro.png">
+                                    </div>
+                                </article>
+                            </section>
+                            <section class="figuras">
+                                <article id="figura">
+                                    <img id="triangulo" src="imagenes/triangulo.png">
+                                </article>
+                                <article id="figura">
+                                    <img id="cuadrado" src="imagenes/cuadrado.png">
+                                </article>
+                                <article id="figura">
+                                    <img id="estrella" src="imagenes/estrella.png">
+                                </article>
+                                <article id="figura">
+                                    <img id="circulo" src="imagenes/circulo.png">
+                                </article>
+                            </section>
+                        </div>
                     </div>
                 </section>
             <div class="clear"></div>
